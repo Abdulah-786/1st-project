@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image" href="a.ico"></link>
+
+</head>
+<style>
+    .progress-container {
+        width: 100%;
+        background-color: #ccc;
+    }
+    
+    .progress-bar {
+        width: 0;
+        height: 30px;
+        background-color: #4CAF50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+    * {
+  background-color: rgb(61, 245, 252);
+    }
+</style>
+
+<body>
+    <h1>
+        <header style="color: gold; text-align: center;">WELCOME</header>
+    </h1>
+    <h1>Progress Bar </h1>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar">0%</div>
+    </div>
+
+    <button onclick="startProgress()">Start Progress</button>
+
+    <script>
+        function startProgress() {
+            let progressBar = document.getElementById("myProgressBar");
+            let width = 0;
+
+            // Simulate progress (you can replace this with your own logic)
+            let interval = setInterval(function() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                } else {
+                    width++;
+                    progressBar.style.width = width + '%';
+                    progressBar.innerHTML = width + '%';
+                }
+            }, 100);
+        }
+        
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   <img    style="height: 300px; width: 300px; margin-left: 35%; margin-top: 15%;"   src="file:///F:/ABDULLAH/my%20all%202/WhatsApp%20Image%202023-10-02%20at%202.49.44%20PM.jpeg" >
+   <br>
+   <br>
+
+
+</body>
+</html>
